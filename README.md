@@ -12,7 +12,6 @@ This repository contains a complete data pipeline for processing and analyzing u
 - [ETL Pipeline](#etl-pipeline)
 - [Schema Design](#schema-design)
 - [Data Processing](#data-processing)
-- [Performance Optimization](#performance-optimization)
 - [Sample Queries](#sample-queries)
 - [Assumptions](#assumptions)
 
