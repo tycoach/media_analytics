@@ -42,13 +42,13 @@ media-analytics/
 ├── data/                    # Directory for JSON data files
 ├── scripts/
 │   ├── etl_pipeline.py      # Main ETL script
-│   ├── generate_sample_data.py  # Sample data generator
-│   ├── db_schema.sql        # Database schema creation script
-│   ├── analysis_queries.sql # Analytics queries
+│   ├── generator.py  # Sample data generator
+│   ├── schema.sql        # Database schema creation script
+│   ├── analysis.sql # Analytics queries
 │   └── performance_optimization.sql # Performance optimization
 ├── README.md                # This file
 ├── requirements.txt         # Python dependencies
-└── .env.example             # Example environment variables
+└── .env           #  environment variables
 ```
 
 ## Setup Instructions
@@ -98,7 +98,7 @@ cp .env.example .env
 ### 5. Generate sample data (optional)
 
 ```bash
-python scripts/generate_sample_data.py
+python scripts/generator.py
 ```
 
 ### 6. Run the ETL pipeline
@@ -180,14 +180,10 @@ The following optimization strategies are implemented:
 
 - Table partitioning by date
 - Strategic indexing on frequently queried columns
-- Materialized views for common reports
-- Query optimization techniques
-- Data retention policies
-- Statistics collection for query planner
 
 ## Sample Queries
 
-See `scripts/analysis_queries.sql` for a comprehensive set of analytics queries, including:
+See `scripts/analysis.sql` for a comprehensive set of analytics queries, including:
 
 - Daily visitor counts
 - Popular content identification
